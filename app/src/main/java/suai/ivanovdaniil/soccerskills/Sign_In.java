@@ -1,20 +1,17 @@
 package suai.ivanovdaniil.soccerskills;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import java.util.concurrent.TimeUnit;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class LaunchScreen extends AppCompatActivity
+public class Sign_In extends AppCompatActivity
 {
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.launch_screen);
+        setContentView(R.layout.sign_in);
 
         getSupportActionBar().hide();
 
@@ -40,24 +37,5 @@ public class LaunchScreen extends AppCompatActivity
                 }
             }
         });
-
-        SplashScreen_Thread SplashScreen = new SplashScreen_Thread(); SplashScreen.start();
-    }
-
-    private class SplashScreen_Thread extends Thread
-    {
-        @Override
-        public void run()
-        {
-            try { TimeUnit.SECONDS.sleep(1); }
-            catch (InterruptedException ex) { Thread.currentThread().interrupt(); }
-
-            Intent intent = new Intent(LaunchScreen.this, Sign_In.class);
-            startActivity(intent); finish();
-
-            Thread.currentThread().interrupt();
-        }
     }
 }
-
-
