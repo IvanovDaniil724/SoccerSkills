@@ -1,7 +1,9 @@
 package suai.ivanovdaniil.soccerskills;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -35,6 +37,17 @@ public class Sign_In extends AppCompatActivity
                 {
                     decorView.setSystemUiVisibility(flags);
                 }
+            }
+        });
+
+        TextView SignUpNow_Text = findViewById(R.id.SignUpNow_Text);
+        SignUpNow_Text.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(Sign_In.this, Sign_Up.class);
+                startActivity(intent); finish();
             }
         });
     }

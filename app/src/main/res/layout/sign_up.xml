@@ -33,6 +33,31 @@
         app:srcCompat="@drawable/team_8" />
 
     <EditText
+        android:id="@+id/Email_PlainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="12"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Login_PlainText" />
+
+    <ImageView
+        android:id="@+id/Email_Image"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/Email_PlainText"
+        app:layout_constraintTop_toBottomOf="@+id/Login_Image"
+        app:srcCompat="@drawable/team_9" />
+
+    <EditText
         android:id="@+id/Password_PlainText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -44,7 +69,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.65"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Login_PlainText" />
+        app:layout_constraintTop_toBottomOf="@+id/Email_PlainText" />
 
     <ImageView
         android:id="@+id/Password_Image"
@@ -54,7 +79,32 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         app:layout_constraintEnd_toStartOf="@+id/Password_PlainText"
-        app:layout_constraintTop_toBottomOf="@+id/Login_Image"
+        app:layout_constraintTop_toBottomOf="@+id/Email_Image"
+        app:srcCompat="@drawable/team_11" />
+
+    <EditText
+        android:id="@+id/RepeatPassword_PlainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="12"
+        android:hint="Repeat password"
+        android:inputType="textPassword"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Password_PlainText" />
+
+    <ImageView
+        android:id="@+id/RepeatPassword_Image"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/RepeatPassword_PlainText"
+        app:layout_constraintTop_toBottomOf="@+id/Password_Image"
         app:srcCompat="@drawable/team_11" />
 
     <ImageView
@@ -81,36 +131,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <CheckBox
-        android:id="@+id/RememberMe_CheckBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Remember me"
-        android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Password_PlainText" />
-
-    <TextView
-        android:id="@+id/ForgotPassword_Text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Forgot password?"
-        android:textColor="@android:color/background_dark"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RememberMe_CheckBox" />
-
     <Button
         android:id="@+id/SignIn_Button"
         style="@style/Widget.AppCompat.Button.Small"
         android:layout_width="196dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/buttons_background"
         android:text="Sign in"
         android:textAllCaps="false"
@@ -119,32 +145,6 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ForgotPassword_Text" />
-
-    <TextView
-        android:id="@+id/Without_account_Text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Don't have an account?"
-        android:textColor="@android:color/background_dark"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SignIn_Button" />
-
-    <TextView
-        android:id="@+id/SignUpNow_Text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:padding="4dp"
-        android:text="Sign up now"
-        android:textAllCaps="true"
-        android:textColor="@android:color/background_dark"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Without_account_Text" />
+        app:layout_constraintTop_toBottomOf="@+id/RepeatPassword_PlainText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
