@@ -132,13 +132,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/SignIn_Button"
+        android:id="@+id/Create_Button"
         style="@style/Widget.AppCompat.Button.Small"
         android:layout_width="196dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:background="@drawable/buttons_background"
-        android:text="Sign in"
+        android:text="Create"
         android:textAllCaps="false"
         android:textColor="@android:color/background_light"
         android:textSize="18sp"
