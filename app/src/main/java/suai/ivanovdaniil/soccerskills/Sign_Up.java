@@ -19,8 +19,8 @@ public class Sign_Up extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sign_up);
 
-        final int flags = View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-                | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
+        int flags = View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                    | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
 
         getWindow().getDecorView().setSystemUiVisibility(flags);
 
@@ -108,15 +108,12 @@ public class Sign_Up extends AppCompatActivity
     @Override
     public boolean onOptionsItemSelected(MenuItem item)
     {
-        switch (item.getItemId())
+        if (item.getItemId() == android.R.id.home)
         {
-            case android.R.id.home:
-                {
-                    Intent intent = new Intent(Sign_Up.this, Sign_In.class);
-                    startActivity(intent); finish(); return true;
-                }
-            default: { return super.onOptionsItemSelected(item); }
+            Intent intent = new Intent(Sign_Up.this, Sign_In.class);
+            startActivity(intent); finish(); return true;
         }
+        else { return super.onOptionsItemSelected(item); }
     }
 }
 

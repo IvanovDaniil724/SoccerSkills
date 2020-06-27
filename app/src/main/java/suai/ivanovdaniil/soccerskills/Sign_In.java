@@ -80,8 +80,8 @@ public class Sign_In extends AppCompatActivity
                 }
                 else
                 {
-                    //Intent intent = new Intent(Sign_In.this, Sign_Up.class);
-                    //startActivity(intent); finish();
+                    Intent intent = new Intent(Sign_In.this, Events.class);
+                    startActivity(intent); finish();
                 }
             }
         });

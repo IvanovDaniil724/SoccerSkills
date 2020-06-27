@@ -49,7 +49,7 @@ public class LaunchScreen extends AppCompatActivity
         @Override
         public void run()
         {
-            try { TimeUnit.SECONDS.sleep(1); }
+            try { Thread.sleep(500); }
             catch (InterruptedException ex) { Thread.currentThread().interrupt(); }
 
             Intent intent = new Intent(LaunchScreen.this, Sign_In.class);

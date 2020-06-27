@@ -28,6 +28,12 @@
             android:label="Sign up"
             android:theme="@style/AppTheme"
             android:noHistory="false"/>
+
+        <activity
+            android:name=".Events"
+            android:label="Events"
+            android:theme="@style/AppTheme"
+            android:noHistory="false"/>
     </application>
 
 </manifest>
