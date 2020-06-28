@@ -115,5 +115,14 @@ public class Sign_Up extends AppCompatActivity
         }
         else { return super.onOptionsItemSelected(item); }
     }
+
+    @Override
+    protected void onResume()
+    {
+        super.onResume();
+        int flags = View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
+        getWindow().getDecorView().setSystemUiVisibility(flags);
+    }
 }
 

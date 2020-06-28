@@ -40,6 +40,12 @@
             android:label=""
             android:theme="@style/AppTheme"
             android:noHistory="false"/>
+
+        <activity
+            android:name=".NewEvent"
+            android:label=""
+            android:theme="@style/AppTheme"
+            android:noHistory="false"/>
     </application>
 
 </manifest>

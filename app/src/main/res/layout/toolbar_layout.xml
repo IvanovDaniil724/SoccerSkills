@@ -4,13 +4,22 @@
     android:id="@+id/Events_ToolBar"
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize"
-    app:contentInsetStart="8dp"
+    app:contentInsetStart="0dp"
     app:title="">
 
+    <TextView
+        android:id="@+id/LeftText_Item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text=""
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
     <ImageView
-        android:id="@+id/Calendar_Item"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
+        android:id="@+id/Left_Toolbar_Item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="start"
         android:padding="4dp"
         app:srcCompat="@drawable/calendar_icon" />
@@ -24,10 +33,19 @@
         android:text=""
         android:textColor="@android:color/background_light" />
 
+    <TextView
+        android:id="@+id/RightText_Item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text=""
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
     <ImageView
-        android:id="@+id/Search_Item"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
+        android:id="@+id/Right_Toolbar_Item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="end"
         android:padding="4dp"
         app:srcCompat="@drawable/search_icon" />

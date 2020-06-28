@@ -7,56 +7,6 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/Menu_Toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|center_horizontal"
-        android:background="@color/MenuBackground"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme">
-
-        <ImageView
-            android:id="@+id/GroupCall_Menu_Image"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="start"
-            app:srcCompat="@drawable/icons8_group_call_100" />
-
-        <ImageView
-            android:id="@+id/Events_Menu_Image"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:layout_gravity="center"
-            android:padding="4dp"
-            app:srcCompat="@drawable/events_menu_icon" />
-
-        <ImageView
-            android:id="@+id/Settings_Menu_Image"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            app:srcCompat="@drawable/settings_menu_icon" />
-
-    </androidx.appcompat.widget.Toolbar>
-
-    <Button
-        android:id="@+id/AddEvent_Button"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_gravity="bottom|end"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="72dp"
-        android:background="@drawable/add_event_button_background"
-        android:gravity="center"
-        android:text="+"
-        android:textColor="@android:color/background_light"
-        android:textSize="32sp" />
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/EventsContent_Layout"
         android:layout_width="match_parent"
@@ -112,5 +62,55 @@
             app:layout_constraintTop_toBottomOf="@+id/Event_3" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/Menu_Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/MenuBackground"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <ImageView
+            android:id="@+id/GroupCall_Menu_Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            app:srcCompat="@drawable/icons8_group_call_100" />
+
+        <ImageView
+            android:id="@+id/Events_Menu_Image"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:padding="4dp"
+            app:srcCompat="@drawable/events_menu_icon" />
+
+        <ImageView
+            android:id="@+id/Settings_Menu_Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:srcCompat="@drawable/settings_menu_icon" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <Button
+        android:id="@+id/AddEvent_Button"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="72dp"
+        android:background="@drawable/add_event_button_background"
+        android:gravity="center"
+        android:text="+"
+        android:textColor="@android:color/background_light"
+        android:textSize="32sp" />
 
 </FrameLayout>
