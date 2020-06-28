@@ -2,27 +2,16 @@ package suai.ivanovdaniil.soccerskills;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Gravity;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import androidx.appcompat.widget.Toolbar;
-
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.List;
-
 public class Events extends AppCompatActivity
 {
-    public int Events_Count = 4;
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -40,7 +29,6 @@ public class Events extends AppCompatActivity
 
         TextView ToolBar_Title = getSupportActionBar().getCustomView().findViewById(R.id.ActionBar_Title);
         ImageView ToolBar_CalendarItem = getSupportActionBar().getCustomView().findViewById(R.id.Calendar_Item);
-        ImageView ToolBar_SearchItem = getSupportActionBar().getCustomView().findViewById(R.id.Search_Item);
         ToolBar_Title.setText("Events");
 
         ToolBar_CalendarItem.setOnClickListener(new View.OnClickListener()
@@ -48,16 +36,8 @@ public class Events extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                Toast.makeText(getApplicationContext(), "Calendar!", Toast.LENGTH_LONG).show();
-            }
-        });
-
-        ToolBar_SearchItem.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                Toast.makeText(getApplicationContext(), "Search!", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(Events.this, EventsCalendar.class);
+                startActivity(intent); finish();
             }
         });
 
@@ -72,7 +52,7 @@ public class Events extends AppCompatActivity
         Fill_Event("18", "Fri",
                 "Spartak M - Zenit", "12:00", Events, 0);
         Fill_Event("19", "Sat",
-                "Tomsk = Rostov", "12:00", Events, 1);
+                "Tomsk - Rostov", "12:00", Events, 1);
         Fill_Event("19", "Sat",
                 "Ural - Rubin", "12:00", Events, 2);
         Fill_Event("20", "Mon",

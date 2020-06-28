@@ -31,7 +31,13 @@
 
         <activity
             android:name=".Events"
-            android:label="Events"
+            android:label=""
+            android:theme="@style/AppTheme"
+            android:noHistory="false"/>
+
+        <activity
+            android:name=".EventsCalendar"
+            android:label=""
             android:theme="@style/AppTheme"
             android:noHistory="false"/>
     </application>
