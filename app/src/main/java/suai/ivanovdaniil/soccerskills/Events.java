@@ -54,6 +54,16 @@ public class Events extends AppCompatActivity
             }
         });
 
+        findViewById(R.id.GroupCall_Menu_Image).setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(Events.this, Teams.class);
+                startActivity(intent); finish();
+            }
+        });
+
         LinearLayout[] Events =
                 {
                         findViewById(R.id.Event_1),

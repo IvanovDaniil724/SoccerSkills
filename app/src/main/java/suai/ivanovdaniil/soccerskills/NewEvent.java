@@ -2,12 +2,10 @@ package suai.ivanovdaniil.soccerskills;
 
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.Spinner;
@@ -16,7 +14,6 @@ import android.widget.TextView;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.view.ContextThemeWrapper;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -84,6 +81,16 @@ public class NewEvent extends AppCompatActivity
             public void onClick(View v)
             {
                 SaveEvent_Dialog.show();
+            }
+        });
+
+        findViewById(R.id.GroupCall_Menu_Image).setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(NewEvent.this, Teams.class);
+                startActivity(intent); finish();
             }
         });
 

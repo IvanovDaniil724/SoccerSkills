@@ -36,6 +36,16 @@ public class EventsCalendar extends AppCompatActivity
         ToolBar_RightText_Item.setVisibility(View.GONE); ToolBar_LeftText_Item.setVisibility(View.GONE);
         ToolBar_CalendarItem.setVisibility(View.GONE); ToolBar_SearchItem.setVisibility(View.GONE);
 
+        findViewById(R.id.GroupCall_Menu_Image).setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(EventsCalendar.this, Teams.class);
+                startActivity(intent); finish();
+            }
+        });
+
         findViewById(R.id.Events_Menu_Image).setOnClickListener(new View.OnClickListener()
         {
             @Override

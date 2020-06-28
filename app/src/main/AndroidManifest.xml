@@ -46,6 +46,12 @@
             android:label=""
             android:theme="@style/AppTheme"
             android:noHistory="false"/>
+
+        <activity
+            android:name=".Teams"
+            android:label="Teams"
+            android:theme="@style/FullscreenTheme"
+            android:noHistory="false"/>
     </application>
 
 </manifest>
