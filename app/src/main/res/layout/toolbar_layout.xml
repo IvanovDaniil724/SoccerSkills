@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize"
     app:contentInsetStart="0dp"
-    app:title="">
+    app:contentInsetStartWithNavigation="0dp"
+    app:titleMargin="0dp">
 
     <TextView
         android:id="@+id/LeftText_Item"

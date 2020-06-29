@@ -79,14 +79,14 @@ public class Teams extends AppCompatActivity
 
         TeamTitle.setText(TeamTitle_Text); Team_Image.setImageResource(Team_Image_ID);
 
-        /*teams[team_id].setOnClickListener(new View.OnClickListener()
+        teams[team_id].setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
-                Intent intent = new Intent(Teams.this, Events.class);
+                Intent intent = new Intent(Teams.this, ShowTeam.class);
                 startActivity(intent); finish();
             }
-        });*/
+        });
     }
 }
