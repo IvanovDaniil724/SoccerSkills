@@ -44,6 +44,16 @@ public class ShowTeam extends AppCompatActivity
                 startActivity(intent); finish();
             }
         });
+
+        findViewById(R.id.GameScore_Layout_1).setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(ShowTeam.this, ShowMatch.class);
+                startActivity(intent); finish();
+            }
+        });
     }
 
     @Override
