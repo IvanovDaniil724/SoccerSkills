@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SoccerSkills</string>
+    <string name="CopyrightInfo">2019 ООО \"СоккерСкиллс\"\nРазработано с любовью в WorldSkills Russia компетенция F6 Разработка мобильных приложений</string>
 </resources>

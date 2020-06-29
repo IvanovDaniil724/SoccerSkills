@@ -55,6 +55,26 @@ public class Settings extends AppCompatActivity
                 startActivity(intent); finish();
             }
         });
+
+        findViewById(R.id.AboutTitle).setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(Settings.this, AboutUs.class);
+                startActivity(intent); finish();
+            }
+        });
+
+        findViewById(R.id.PersonalDataTitle).setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                //Intent intent = new Intent(Settings.this, AboutUs.class);
+                //startActivity(intent); finish();
+            }
+        });
     }
 
     @Override

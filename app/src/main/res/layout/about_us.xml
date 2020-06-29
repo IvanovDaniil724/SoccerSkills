@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/AboutUs_FrameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/AboutUs_ConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridLayout
+            android:id="@+id/AboutUs_Logo_GridLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="96dp"
+            android:columnCount="2"
+            android:rowCount="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/Settings_SoccerBall_Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/soccer_ball_2" />
+
+            <TextView
+                android:id="@+id/SettingsAppName_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:text="SoccerSkills"
+                android:textColor="@android:color/background_dark"
+                android:textSize="30sp"
+                android:translationX="-32dp" />
+
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/AppDescription_Text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginRight="64dp"
+            android:gravity="center"
+            android:lineSpacingExtra="2sp"
+            android:text="SoccerSkills - самое популярное приложения о спортивных мероприятиях с аудиторией больше 7 миллионов пользователей."
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/AboutUs_Logo_GridLayout" />
+
+        <ImageView
+            android:id="@+id/WorldSkills_Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/AppDescription_Text"
+            app:srcCompat="@drawable/worldskills_284349" />
+
+        <TextView
+            android:id="@+id/CopyrightInfo_Text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginRight="64dp"
+            android:gravity="center"
+            android:lineSpacingExtra="2sp"
+            android:text="@string/CopyrightInfo"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/WorldSkills_Image" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/Menu_Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/MenuBackground"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <ImageView
+            android:id="@+id/GroupCall_Menu_Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            app:srcCompat="@drawable/icons8_group_call_100" />
+
+        <ImageView
+            android:id="@+id/Events_Menu_Image"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:padding="4dp"
+            app:srcCompat="@drawable/events_menu_icon" />
+
+        <ImageView
+            android:id="@+id/Settings_Menu_Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:srcCompat="@drawable/settings_menu_icon" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+</FrameLayout>
