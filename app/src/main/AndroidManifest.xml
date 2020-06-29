@@ -64,6 +64,12 @@
             android:label=""
             android:theme="@style/AppTheme"
             android:noHistory="false"/>
+
+        <activity
+            android:name=".EditMatch"
+            android:label=""
+            android:theme="@style/AppTheme"
+            android:noHistory="false"/>
     </application>
 
 </manifest>
