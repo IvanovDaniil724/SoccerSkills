@@ -71,8 +71,8 @@ public class Settings extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                //Intent intent = new Intent(Settings.this, AboutUs.class);
-                //startActivity(intent); finish();
+                Intent intent = new Intent(Settings.this, Profile.class);
+                startActivity(intent); finish();
             }
         });
     }

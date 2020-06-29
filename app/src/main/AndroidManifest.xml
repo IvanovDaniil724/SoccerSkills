@@ -82,6 +82,12 @@
             android:label=""
             android:theme="@style/AppTheme"
             android:noHistory="false"/>
+
+        <activity
+            android:name=".Profile"
+            android:label=""
+            android:theme="@style/AppTheme"
+            android:noHistory="false"/>
     </application>
 
 </manifest>
