@@ -94,6 +94,26 @@ public class NewEvent extends AppCompatActivity
             }
         });
 
+        findViewById(R.id.Events_Menu_Image).setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(NewEvent.this, Events.class);
+                startActivity(intent); finish();
+            }
+        });
+
+        findViewById(R.id.Settings_Menu_Image).setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(NewEvent.this, Settings.class);
+                startActivity(intent); finish();
+            }
+        });
+
         String[] EventStart_Array = { "2019-09-01 09:00:00" },
                  EventFinish_Array = { "2019-09-01 09:00:00" },
                  Teams_Array = { "CSKA", "Spartak", "Dinamo Kiev", "Fakel", "Rubin" };

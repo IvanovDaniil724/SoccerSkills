@@ -64,6 +64,16 @@ public class Events extends AppCompatActivity
             }
         });
 
+        findViewById(R.id.Settings_Menu_Image).setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(Events.this, Settings.class);
+                startActivity(intent); finish();
+            }
+        });
+
         LinearLayout[] Events =
                 {
                         findViewById(R.id.Event_1),

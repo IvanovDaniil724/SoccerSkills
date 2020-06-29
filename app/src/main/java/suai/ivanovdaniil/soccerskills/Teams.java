@@ -52,6 +52,16 @@ public class Teams extends AppCompatActivity
             }
         });
 
+        findViewById(R.id.Settings_Menu_Image).setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(Teams.this, Settings.class);
+                startActivity(intent); finish();
+            }
+        });
+
         String[] TeamsText_Array = { "CSKA", "Spartak", "Dinamo Kiev", "Fakel", "Rubin" };
         GridLayout[] Teams =
                 {

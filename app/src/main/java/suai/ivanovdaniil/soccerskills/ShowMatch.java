@@ -92,6 +92,16 @@ public class ShowMatch extends AppCompatActivity
             }
         });
 
+        findViewById(R.id.Settings_Menu_Image).setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(ShowMatch.this, Settings.class);
+                startActivity(intent); finish();
+            }
+        });
+
         Timer HideUI_Timer = new Timer();
         final Handler HideUI_Handler = new Handler();
         HideUI_Timer.schedule(new TimerTask()

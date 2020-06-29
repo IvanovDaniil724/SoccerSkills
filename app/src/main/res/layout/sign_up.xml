@@ -31,7 +31,7 @@
         android:layout_marginRight="8dp"
         app:layout_constraintEnd_toStartOf="@+id/Login_PlainText"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/team_8" />
+        app:srcCompat="@drawable/image_1" />
 
     <EditText
         android:id="@+id/Email_PlainText"
@@ -109,7 +109,7 @@
         app:srcCompat="@drawable/team_11" />
 
     <ImageView
-        android:id="@+id/SoccerBall_Image"
+        android:id="@+id/Settings_SoccerBall_Image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="128dp"
@@ -120,7 +120,7 @@
         app:srcCompat="@drawable/soccer_ball_1" />
 
     <TextView
-        android:id="@+id/Header_Text"
+        android:id="@+id/SettingsAppName_Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="160dp"
